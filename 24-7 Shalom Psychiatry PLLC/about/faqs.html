@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frequently Asked Questions | 24-7 Shalom Psychiatry</title>
+    <meta name="description" content="FAQs about our practice.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+    details { background: white; margin-bottom: 1rem; border-radius: var(--border-radius); box-shadow: var(--shadow-sm); overflow: hidden; border-left: 4px solid var(--color-accent); }
+    summary { padding: 1.5rem; font-family: var(--font-heading); font-size: 1.1rem; color: var(--color-primary); cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; font-weight: 600; }
+    summary::-webkit-details-marker { display: none; }
+    summary:after { content: '+'; font-size: 1.5rem; color: var(--color-primary); transition: transform 0.3s; }
+    details[open] summary:after { transform: rotate(45deg); }
+    .faq-content { padding: 0 1.5rem 1.5rem 1.5rem; color: var(--color-text-muted); line-height: 1.7; font-size: 1rem; }
+</style>
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <main>
+        <header class="global-page-hero" style="background-image: url('../images/realistic_clinic_3.jpg');">
+            <div class="global-page-hero-overlay">
+                <h1>Frequently Asked Questions</h1>
+            </div>
+        </header>
+
+        <section class="content-section" style="padding: 5rem 0;">
+            <div class="container">
+                <div class="condition-layout">
+    <div class="condition-text">
+        <h2 style="font-size: 2.5rem; color: var(--color-primary); margin-bottom: 1.5rem;">Common Questions</h2>
+        <p style="font-size: 1.1rem; color: var(--color-text-muted); line-height: 1.8;">Find answers to the most common questions about insurance, appointments, and our treatment process.</p>
+        <img src="../images/wide_sharp_1.jpg" alt="Patient Care" style="width: 100%; border-radius: var(--border-radius); box-shadow: var(--shadow-sm); margin-top: 2rem;">
+    </div>
+    <div>
+        <details>
+            <summary>Do you accept insurance?</summary>
+            <div class="faq-content">Yes, we accept a variety of major insurance plans. We recommend contacting our office directly with your insurance information to verify benefits.</div>
+        </details>
+        <details>
+            <summary>What should I expect during my first visit?</summary>
+            <div class="faq-content">Your initial evaluation will last approx. 60 minutes to discuss your history, symptoms, and treatment goals.</div>
+        </details>
+        <details>
+            <summary>Do you offer telehealth appointments?</summary>
+            <div class="faq-content">Absolutely. We offer secure, HIPAA-compliant telepsychiatry services for patients across the states we are licensed in.</div>
+        </details>
+        <details>
+            <summary>How often will I need to be seen?</summary>
+            <div class="faq-content">Initially every 2 to 4 weeks while stabilizing, then spaced out to every 1 to 3 months once stable.</div>
+        </details>
+    </div>
+</div>
+            </div>
+        </section>
+        
+        <section class="condition-cta">
+            <div class="container">
+                <h2>Ready to take the next step?</h2>
+                <p>Contact us today to schedule your consultation.</p>
+                <a href="../contact.html" class="btn btn-primary">Schedule an Appointment</a>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

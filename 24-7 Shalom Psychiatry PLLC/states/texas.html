@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psychiatric Care in Texas | 24-7 Shalom Psychiatry</title>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        .state-hero {
+            background: linear-gradient(rgba(26, 54, 93, 0.9), rgba(26, 54, 93, 0.9)), url('https://images.unsplash.com/photo-1531218150217-545f8b156c8f?w=1200&q=80') center/cover;
+            padding: var(--spacing-xl) 0;
+            text-align: center;
+            color: white;
+        }
+        .state-hero h1 { color: white; }
+    </style>
+</head>
+<body>
+    <div id="header-placeholder"></div>
+    <main>
+        <header class="global-page-hero" style="background-image: url('../images/realistic_clinic_3.jpg');">
+            <div class="global-page-hero-overlay">
+                <h1>Mental Health Care in Texas</h1>
+                <p>Providing premium, accessible psychiatric evaluations and medication management across the Lone Star State.</p>
+                <a href="#book" class="btn btn-secondary mt-2">Book an Appointment in TX</a>
+            </div>
+        </header>
+        <section class="container" style="padding: var(--spacing-lg) 0;">
+            <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 4rem;">
+                <div>
+                    <h2>Our Services in Texas</h2>
+                    <p class="mt-1">We offer comprehensive telepsychiatry services for patients physically located in Texas during their appointment.</p>
+                    <ul class="mt-2" style="margin-left: 1.5rem; line-height: 2;">
+                        <li><a href="../conditions/adhd.html">ADHD Evaluations</a></li>
+                        <li><a href="../conditions/anxiety.html">Anxiety Management</a></li>
+                        <li><a href="../conditions/pain-management.html">Pain & Mental Health Support</a></li>
+                        <li>Depression Treatment</li>
+                    </ul>
+                </div>
+                <div class="bg-light" style="padding: 2rem; border-radius: var(--border-radius);">
+                    <h3>Accepted TX Insurance</h3>
+                    <ul class="mt-1 text-muted" style="list-style:none;">
+                        <li>✓ Blue Cross Blue Shield Texas</li>
+                        <li>✓ Aetna</li>
+                        <li>✓ UnitedHealthcare</li>
+                        <li>✓ Cigna</li>
+                        <li>✓ Superior HealthPlan</li>
+                    </ul>
+                    <a href="#insurance" class="text-link mt-1" style="display:inline-block;">View self-pay rates &rarr;</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div id="footer-placeholder"></div>
+    <script src="../js/main.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const fixPaths = (el) => {
+                if(!el) return;
+                el.innerHTML = el.innerHTML.replace(/href="css\//g, 'href="../css/')
+                                           .replace(/href="js\//g, 'href="../js/')
+                                           .replace(/src="js\//g, 'src="../js/')
+                                           .replace(/href="index\.html/g, 'href="../index.html')
+                                           .replace(/href="conditions\//g, 'href="../conditions/');
+            };
+            setTimeout(() => {
+                fixPaths(document.getElementById('header-placeholder'));
+                fixPaths(document.getElementById('footer-placeholder'));
+            }, 50);
+        });
+    </script>
+</body>
+</html>
+

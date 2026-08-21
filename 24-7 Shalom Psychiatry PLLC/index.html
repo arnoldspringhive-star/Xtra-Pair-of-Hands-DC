@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>24-7 Shalom Psychiatry | Mental Health Care & Education</title>
+    <meta name="description" content="Premium, accessible mental health care, education, and understanding. We specialize in ADHD, Anxiety, and Pain & Mental Health across multiple states.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <main>
+        <!-- HERO SECTION REDESIGN -->
+        <section class="hero" id="openVideoBtn" style="position: relative; overflow: hidden; height: 650px; padding: 0; display: block; cursor: pointer;">
+            <!-- Background Slideshow -->
+            <div class="hero-slideshow" style="border-radius: 0;">
+                <div class="slide active" style="background-image: url('images/hero-1.jpg');"></div>
+                <div class="slide" style="background-image: url('images/hero-2.jpg');"></div>
+                <div class="slide" style="background-image: url('images/hero-3.jpg');"></div>
+            </div>
+            <!-- Dark Overlay Gradient for Text Readability -->
+            <div style="position: absolute; top:0; left:0; width:100%; height:100%; background: linear-gradient(to right, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.5) 45%, rgba(0,0,0,0) 70%); z-index: 1;"></div>
+            
+            <!-- Left-Aligned Content -->
+            <div class="hero-content" style="position: absolute; z-index: 2; width: 100%; max-width: 1500px; height: 100%; display: flex; align-items: center; justify-content: flex-start; top: 0; left: 50%; transform: translateX(-50%); padding: 0 2rem;">
+                <div class="hero-text" style="text-align: left; color: white; max-width: 750px;">
+                    <div class="hero-pill-badge" style="background-color: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.3); color: white;">
+                        <span>•</span> COMPREHENSIVE PSYCHIATRY + COMPASSIONATE SUPPORT
+                    </div>
+                    <h1 class="hero-title" style="color: white; font-family: 'Marcellus', serif; font-size: 4.5rem; text-shadow: 0 2px 10px rgba(0,0,0,0.3);">CARE THAT HONORS EVERY STAGE OF LIFE.</h1>
+                    <p class="hero-subtitle" style="color: rgba(255,255,255,0.9); font-family: 'Poppins', sans-serif; font-size: 1.3rem; margin: 1.5rem 0 2.5rem 0; max-width: 700px; text-shadow: 0 1px 5px rgba(0,0,0,0.5);">Personalized mental health care focused on comfort, independence, dignity, and the wellbeing of every individual we serve with compassion and clinical excellence.</p>
+                    <div class="hero-actions" style="justify-content: flex-start;">
+                        <a href="#book" class="btn btn-primary" style="border-radius: 50px; font-weight: 600; padding: 1rem 2.5rem;">Explore Our Care</a>
+                        <a href="#contact" class="btn btn-outline" style="border-radius: 50px; font-weight: 600; color: white; border-color: white; background: rgba(255,255,255,0.1); padding: 1rem 2.5rem;">Talk With Our Team</a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Video Modal -->
+        <div id="videoModal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <div class="iframe-container">
+                    <iframe
+                        id="modalIframe"
+                        src=""
+                        data-src="https://screencast.springhive.net/recordings/uQTeePfNFXZljiqlz3O8"
+                        style="border:none; width: 100%; height: 100%;"
+                        allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="modal-welcome-text" style="color: white; text-align: center; padding: 1.5rem; font-style: italic; font-size: 1.1rem; font-family: var(--font-body); letter-spacing: 0.5px;">
+                    "Welcome to 24-7 Shalom Psychiatry. We are here to help you understand your mental health, explore treatment options, and connect with care."
+                </div>
+            </div>
+        </div>
+
+        <!-- START HERE (GUIDED NAVIGATION) -->
+        <section class="start-here bg-light" id="start-here">
+            <div class="container">
+                <h2 class="section-title text-center">What brings you here today?</h2>
+                <div class="cards-grid">
+                    <a href="#book" class="card interactive-card">
+                        <h3>I Need an Appointment</h3>
+                        <p>Schedule a new or returning visit. Connect with our dedicated care team today.</p>
+                    </a>
+                    <a href="conditions/adhd.html" class="card interactive-card">
+                        <h3>I Think I May Have ADHD</h3>
+                        <p>Explore symptoms and evaluations. Discover personalized strategies for focus.</p>
+                    </a>
+                    <a href="conditions/anxiety.html" class="card interactive-card">
+                        <h3>I Am Dealing With Anxiety</h3>
+                        <p>Understand and treat your anxiety. Build tools for a calmer, healthier life.</p>
+                    </a>
+                    <a href="conditions/pain-management.html" class="card interactive-card">
+                        <h3>I Am Living With Chronic Pain</h3>
+                        <p>Mental health support for chronic pain. Regain control and improve your wellbeing.</p>
+                    </a>
+                    <a href="#child-help" class="card interactive-card">
+                        <h3>I Need Help for My Child</h3>
+                        <p>Resources for parents and guardians. Find compassionate guidance for your child.</p>
+                    </a>
+                    <a href="#teen-help" class="card interactive-card">
+                        <h3>I Am a Teenager Looking for Info</h3>
+                        <p>Mental health education for adolescents. Empowering teens to thrive and grow.</p>
+                    </a>
+                    <a href="#refer" class="card interactive-card">
+                        <h3>I Am Referring a Patient</h3>
+                        <p>Secure professional referral forms. Partner with us for comprehensive care.</p>
+                    </a>
+                    <a href="#careers" class="card interactive-card">
+                        <h3>I Am Looking for a Career</h3>
+                        <p>Join our growing mental health team. Explore exciting career opportunities with us.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SIGNATURE CLINICAL AREAS -->
+        <section class="clinical-areas" id="education">
+            <div class="container">
+                <h2 class="section-title">Signature Clinical Areas</h2>
+                <div class="clinical-grid">
+                    <!-- ADHD -->
+                    <div class="clinical-card" style="background-image: url('images/clinical-adhd.jpg');">
+                        <div class="card-overlay"></div>
+                        <div class="card-content" style="position: relative; z-index: 2;">
+                            <h3 style="color: white; font-family: var(--font-heading-serif);">ADHD Center</h3>
+                            <p style="color: rgba(255,255,255,0.9);">Comprehensive evaluation and management for children, teens, and adults. Understand executive function, focus, and modern treatment strategies.</p>
+                            <a href="conditions/adhd.html" class="btn btn-outline" style="color: white; border-color: white;">Explore ADHD Education</a>
+                        </div>
+                    </div>
+                    <!-- ANXIETY -->
+                    <div class="clinical-card" style="background-image: url('images/clinical-anxiety.jpg');">
+                        <div class="card-overlay"></div>
+                        <div class="card-content" style="position: relative; z-index: 2;">
+                            <h3 style="color: white; font-family: var(--font-heading-serif);">Anxiety Center</h3>
+                            <p style="color: rgba(255,255,255,0.9);">From generalized anxiety to panic disorders. Learn about physical symptoms, grounding techniques, and evidence-based treatments.</p>
+                            <a href="conditions/anxiety.html" class="btn btn-outline" style="color: white; border-color: white;">Explore Anxiety Education</a>
+                        </div>
+                    </div>
+                    <!-- PAIN & MENTAL HEALTH -->
+                    <div class="clinical-card" style="background-image: url('images/clinical-pain.jpg');">
+                        <div class="card-overlay"></div>
+                        <div class="card-content" style="position: relative; z-index: 2;">
+                            <h3 style="color: white; font-family: var(--font-heading-serif);">Pain & Mental Health</h3>
+                            <p style="color: rgba(255,255,255,0.9);">Discover the vital connection between chronic pain and behavioral health. Evidence-based support for improved quality of life.</p>
+                            <a href="conditions/pain-management.html" class="btn btn-outline" style="color: white; border-color: white;">Explore Pain Management</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- VIDEO CENTER PREVIEW -->
+        <section class="video-center bg-dark">
+            <div class="container">
+                <div class="video-header">
+                    <h2 class="section-title text-light" style="margin-bottom: 0;">Mental Health Video Center</h2>
+                    <p class="text-light" style="max-width: 800px; margin: 0 auto; color: rgba(255,255,255,0.8) !important; font-size: 1.1rem; line-height: 1.6;">Explore our library of expert-led educational videos. Discover insights to help you understand your mental health and explore treatment options.</p>
+                    <a href="#videos" class="text-link text-light" style="margin-top: 0.5rem;">View all videos &rarr;</a>
+                </div>
+                <div class="video-grid">
+                    <div class="video-card">
+                        <div class="video-thumb" style="background-image: url('images/video-1.jpg')">
+                            <button class="play-btn">▶</button>
+                        </div>
+                        <h4 class="text-light mt-1">Understanding Executive Function</h4>
+                        <p class="text-muted">ADHD Education • 3 min read</p>
+                    </div>
+                    <div class="video-card">
+                        <div class="video-thumb" style="background-image: url('images/video-2.jpg')">
+                            <button class="play-btn">▶</button>
+                        </div>
+                        <h4 class="text-light mt-1">Physical Symptoms of Anxiety</h4>
+                        <p class="text-muted">Anxiety Center • 5 min read</p>
+                    </div>
+                    <div class="video-card">
+                        <div class="video-thumb" style="background-image: url('images/video-3.jpg')">
+                            <button class="play-btn">▶</button>
+                        </div>
+                        <h4 class="text-light mt-1">Mental Health & Chronic Pain</h4>
+                        <p class="text-muted">Pain & Mental Health • 4 min read</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROVIDER HIGHLIGHT -->
+        <section class="provider-highlight" id="meet-dr-peace">
+            <div class="container">
+                <div class="provider-grid">
+                    <div class="provider-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=800&q=80" alt="Dr. Peace - 24-7 Shalom Psychiatry" class="provider-img">
+                        <div class="provider-badge">
+                            <span>Board Certified Psychiatric Provider</span>
+                        </div>
+                    </div>
+                    <div class="provider-info">
+                        <h2 class="section-title" style="margin-bottom: 0.5rem;">Meet Dr. Peace</h2>
+                        <p class="text-muted mb-2">Founder & Lead Clinician</p>
+                        <p class="provider-bio">At 24-7 Shalom Psychiatry, we believe that understanding your mental health is the first step toward healing. Our approach is rooted in education, empathy, and evidence-based care.</p>
+                        <p class="provider-bio">Whether you are seeking an evaluation for ADHD, struggling with anxiety, or looking for behavioral support for chronic pain, our team is here to listen and guide you.</p>
+                        <div class="provider-actions">
+                            <a href="#providers" class="btn btn-primary">View Full Profile</a>
+                            <a href="#book" class="btn btn-secondary">Schedule with Dr. Peace</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- INSURANCE & SELF-PAY SUMMARY -->
+        <section class="insurance-summary bg-light" id="insurance">
+            <div class="container text-center">
+                <h2 class="section-title">Accessible Care & Transparent Pricing</h2>
+                <p class="text-muted" style="max-width: 800px; margin: 0 auto 3rem auto;">We accept a wide range of insurance plans and offer straightforward self-pay rates because high-quality mental health care should be accessible.</p>
+                
+                <div class="pricing-grid">
+                    <div class="pricing-card">
+                        <h3>Self-Pay: Initial Visit</h3>
+                        <div class="price">$299</div>
+                        <p class="text-muted">Up to 50 minutes of comprehensive evaluation and treatment planning.</p>
+                        <a href="#book" class="btn btn-primary mt-2">Book Initial Visit</a>
+                    </div>
+                    <div class="pricing-card">
+                        <h3>Self-Pay: Follow-Up</h3>
+                        <div class="price">$149</div>
+                        <p class="text-muted">Up to 50 minutes for medication management and returning patients.</p>
+                        <a href="#book" class="btn btn-secondary mt-2">Book Follow-Up</a>
+                    </div>
+                </div>
+                
+                <div class="insurance-logos" style="padding: 100px 0;">
+                    <h3 style="font-size: 2rem; font-family: var(--font-heading-serif); margin-bottom: 2rem; color: var(--color-primary);">Accepted Insurance Plans Include:</h3>
+                    <div class="logo-grid">
+                        <img src="images/insurance/aetna.svg" alt="Aetna Insurance" class="insurance-logo">
+                        <img src="images/insurance/bcbs.svg" alt="Blue Cross Blue Shield" class="insurance-logo">
+                        <img src="images/insurance/cigna.svg" alt="Cigna Insurance" class="insurance-logo">
+                        <img src="images/insurance/uhc.svg" alt="UnitedHealthcare" class="insurance-logo">
+                        <img src="images/insurance/medicare.svg" alt="Medicare" class="insurance-logo">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+

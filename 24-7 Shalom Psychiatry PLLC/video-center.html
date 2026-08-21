@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Video Center | 24-7 Shalom Psychiatry</title>
+    <meta name="description" content="Explore our extensive mental health video library featuring ADHD education, Anxiety management, Pain & Mental Health, and more from Dr. Peace.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .video-hub-hero {
+            background-color: var(--color-primary);
+            color: white;
+            padding: var(--spacing-xl) 0 var(--spacing-lg);
+            text-align: center;
+        }
+        
+        .video-hub-hero h1 {
+            color: white;
+        }
+        
+        .search-container {
+            max-width: 600px;
+            margin: 2rem auto 0;
+            display: flex;
+            gap: 1rem;
+        }
+        
+        .search-input {
+            flex: 1;
+            padding: 1rem;
+            border-radius: 50px;
+            border: none;
+            font-size: 1.1rem;
+            box-shadow: var(--shadow-sm);
+        }
+        
+        .category-nav {
+            display: flex;
+            gap: 1rem;
+            overflow-x: auto;
+            padding: 2rem 0;
+            scrollbar-width: none;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+            margin-bottom: var(--spacing-lg);
+        }
+        
+        .category-nav::-webkit-scrollbar {
+            display: none;
+        }
+        
+        .category-pill {
+            white-space: nowrap;
+            padding: 0.5rem 1.25rem;
+            border-radius: 50px;
+            background: var(--color-background);
+            color: var(--color-text-main);
+            font-weight: 500;
+            border: 1px solid rgba(0,0,0,0.05);
+            transition: var(--transition-fast);
+        }
+        
+        .category-pill:hover, .category-pill.active {
+            background: var(--color-primary);
+            color: white;
+            border-color: var(--color-primary);
+        }
+        
+        .video-section {
+            margin-bottom: var(--spacing-xl);
+        }
+        
+        .video-section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .featured-video {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 3rem;
+            background: var(--color-surface);
+            padding: 2rem;
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--shadow-sm);
+            margin-bottom: var(--spacing-xl);
+        }
+
+        @media (max-width: 768px) {
+            .featured-video {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <main>
+        <header class="global-page-hero" style="background-image: url('images/psychiatry_related_1.jpg');">
+            <div class="global-page-hero-overlay">
+                <h1>Mental Health Video Center</h1>
+                <p>Education leads to understanding. Explore our library of provider-led videos covering ADHD, Anxiety, Pain, and comprehensive mental health topics.</p>
+                <div class="search-container" style="margin-top: 1.5rem;">
+                    <input type="text" class="search-input" placeholder="Search videos (e.g. 'panic attacks', 'ADHD medication')...">
+                    <button class="btn btn-primary" style="background: var(--color-accent); border: none; color: white;">Search</button>
+                </div>
+            </div>
+        </header>
+
+        <section class="container">
+            <div class="category-nav">
+                <a href="#all" class="category-pill active">All Videos</a>
+                <a href="#adhd" class="category-pill">ADHD Center</a>
+                <a href="#anxiety" class="category-pill">Anxiety Center</a>
+                <a href="#pain" class="category-pill">Pain & Mental Health</a>
+                <a href="#parents" class="category-pill">Parent Education</a>
+                <a href="#dr-peace" class="category-pill">Ask Dr. Peace</a>
+                <a href="#medication" class="category-pill">Psychiatric Medications</a>
+            </div>
+
+            <!-- FEATURED VIDEO -->
+            <div class="featured-video">
+                <div class="video-thumb" style="height: 350px; background-image: url('https://images.unsplash.com/photo-1573497491208-6f16a2e2371f?w=1200&q=80')">
+                    <a href="videos/understanding-executive-function.html" style="display:contents;"><button class="play-btn" style="width: 80px; height: 80px; font-size: 2rem;">▶</button></a>
+                </div>
+                <div style="display: flex; flex-direction: column; justify-content: center;">
+                    <span class="text-muted" style="text-transform: uppercase; letter-spacing: 1px; font-size: 0.85rem;">Featured Video • ADHD</span>
+                    <h2 class="mt-1" style="font-size: 2rem;">Understanding Executive Function</h2>
+                    <p class="text-muted mt-2">Dr. Peace explains how ADHD impacts the brain's executive function, affecting motivation, time blindness, and emotional regulation.</p>
+                    <div class="mt-2">
+                        <a href="videos/understanding-executive-function.html" class="btn btn-outline">Watch Video</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RECENTLY ADDED -->
+            <div class="video-section">
+                <div class="video-section-header">
+                    <h2>Recently Added</h2>
+                    <a href="#recent" class="text-link">View All &rarr;</a>
+                </div>
+                <div class="video-grid">
+                    <a href="videos/understanding-executive-function.html" class="video-card">
+                        <div class="video-thumb" style="background-image: url('https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=600&q=80')">
+                            <button class="play-btn">▶</button>
+                        </div>
+                        <h4 class="mt-1 text-primary">Physical Symptoms of Anxiety</h4>
+                        <p class="text-muted" style="font-size: 0.9rem;">Anxiety Center • 5 min</p>
+                    </a>
+                    <a href="videos/understanding-executive-function.html" class="video-card">
+                        <div class="video-thumb" style="background-image: url('https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=600&q=80')">
+                            <button class="play-btn">▶</button>
+                        </div>
+                        <h4 class="mt-1 text-primary">Mental Health & Chronic Pain</h4>
+                        <p class="text-muted" style="font-size: 0.9rem;">Pain Management • 8 min</p>
+                    </a>
+                    <a href="videos/understanding-executive-function.html" class="video-card">
+                        <div class="video-thumb" style="background-image: url('https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=600&q=80')">
+                            <button class="play-btn">▶</button>
+                        </div>
+                        <h4 class="mt-1 text-primary">ADHD Medication Explained</h4>
+                        <p class="text-muted" style="font-size: 0.9rem;">ADHD Center • 12 min</p>
+                    </a>
+                </div>
+            </div>
+
+            <!-- ASK DR. PEACE -->
+            <div class="video-section">
+                <div class="video-section-header">
+                    <h2>Ask Dr. Peace</h2>
+                    <a href="#ask" class="text-link">View All &rarr;</a>
+                </div>
+                <div class="video-grid">
+                    <a href="videos/understanding-executive-function.html" class="video-card">
+                        <div class="video-thumb" style="background-image: url('https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=600&q=80')">
+                            <button class="play-btn">▶</button>
+                        </div>
+                        <h4 class="mt-1 text-primary">When Should I Seek Help?</h4>
+                        <p class="text-muted" style="font-size: 0.9rem;">Provider FAQs • 3 min</p>
+                    </a>
+                    <a href="videos/understanding-executive-function.html" class="video-card">
+                        <div class="video-thumb" style="background-image: url('https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=600&q=80')">
+                            <button class="play-btn">▶</button>
+                        </div>
+                        <h4 class="mt-1 text-primary">Telepsychiatry: What to Expect</h4>
+                        <p class="text-muted" style="font-size: 0.9rem;">Provider FAQs • 4 min</p>
+                    </a>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+

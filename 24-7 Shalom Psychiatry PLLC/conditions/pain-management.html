@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pain & Mental Health | 24-7 Shalom Psychiatry</title>
+    <meta name="description" content="Discover the vital connection between chronic pain and behavioral health. Evidence-based support for improved quality of life.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <main>
+        <header class="global-page-hero" style="background-image: url('../images/clinical_pain.jpg');">
+            <div class="global-page-hero-overlay">
+                <h1>Pain & Mental Health</h1>
+                <p>Chronic pain and mental health are deeply connected. We provide psychiatric and behavioral support to help you manage the emotional toll of chronic pain and improve your quality of life.</p>
+                <div class="mt-2">
+                    <a href="#book-pain" class="btn" style="background-color: #C53030; color: white;">Discuss Pain & Mental Health</a>
+                </div>
+            </div>
+        </header>
+
+        <section class="content-section container">
+            <div class="condition-layout">
+                <div class="condition-text">
+                    <h2>The Mind-Body Connection</h2>
+                    <p>Living with chronic pain can be exhausting, leading to depression, anxiety, and severe sleep disturbances. At 24-7 Shalom Psychiatry, we focus on the psychiatric and behavioral aspects of pain management, working alongside your primary care or pain specialists.</p>
+
+                    <h3>Our Behavioral Approach</h3>
+                    <p>We do not prescribe interventional pain management medications (like opioids), but rather focus on psychiatric interventions that support pain patients.</p>
+                    <ul>
+                        <li><strong>Psychiatric Medication:</strong> Utilizing specific antidepressants or nerve-pain modifying agents (like SNRIs or Gabapentinoids) that have dual benefits for mood and pain.</li>
+                        <li><strong>Sleep Architecture:</strong> Treating the underlying insomnia to restore restorative sleep phases.</li>
+                        <li><strong>Mind-Body Techniques:</strong> Education on how the nervous system processes pain and how to calm the sympathetic nervous system.</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 style="margin-top:0; margin-bottom:1rem; font-size:2.5rem; color:#9B2C2C;">Common Challenges We Address</h3>
+                    <div class="symptom-map-grid">
+                        <div class="symptom-card">
+                            <div class="symptom-card-header">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-primary);"><path d="M17.5 19a5.5 5.5 0 0 0-1.02-10.9A7 7 0 0 0 3 11.5a5.5 5.5 0 0 0 4.5 5.5"/></svg>
+                                <h4>Pain-Induced Depression</h4>
+                            </div>
+                            <p class="text-muted">Feelings of hopelessness, loss of interest in activities, and emotional fatigue resulting from persistent pain.</p>
+                        </div>
+                        <div class="symptom-card">
+                            <div class="symptom-card-header">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-primary);"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                                <h4>Anxiety & Stress</h4>
+                            </div>
+                            <p class="text-muted">Constant worry about flare-ups, which can ironically increase muscle tension and worsen the pain.</p>
+                        </div>
+                        <div class="symptom-card">
+                            <div class="symptom-card-header">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-primary);"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+                                <h4>Sleep Disturbances</h4>
+                            </div>
+                            <p class="text-muted">The cycle of pain preventing restful sleep, which in turn lowers your pain threshold the next day.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="condition-cta">
+                <h3>Need behavioral support for chronic pain?</h3>
+                <p class="mb-2 text-muted">Schedule an evaluation to explore psychiatric options for pain management.</p>
+                <a href="#book-pain" class="btn" style="background-color: #C53030; color: white;">Book an Evaluation</a>
+            </div>
+        </section>
+        
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="../js/main.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const fixPaths = (el) => {
+                if(!el) return;
+                el.innerHTML = el.innerHTML.replace(/href="css\//g, 'href="../css/')
+                                           .replace(/href="js\//g, 'href="../js/')
+                                           .replace(/src="js\//g, 'src="../js/')
+                                           .replace(/href="index\.html/g, 'href="../index.html')
+                                           .replace(/href="conditions\//g, 'href="../conditions/');
+            };
+            setTimeout(() => {
+                fixPaths(document.getElementById('header-placeholder'));
+                fixPaths(document.getElementById('footer-placeholder'));
+            }, 50);
+        });
+    </script>
+</body>
+</html>
+
+

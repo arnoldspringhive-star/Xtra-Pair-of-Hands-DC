@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Peace | 24-7 Shalom Psychiatry</title>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        .profile-header {
+            padding: var(--spacing-xl) 0 var(--spacing-lg);
+            background: var(--color-background);
+        }
+        .profile-grid {
+            display: grid;
+            grid-template-columns: 350px 1fr;
+            gap: 3rem;
+        }
+        .profile-img-container {
+            border-radius: var(--border-radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+        }
+        .profile-img-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .profile-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin: 1rem 0;
+        }
+        .profile-tag {
+            background: white;
+            border: 1px solid rgba(0,0,0,0.1);
+            padding: 0.25rem 0.75rem;
+            border-radius: 50px;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+    <div id="header-placeholder"></div>
+    <main>
+        <header class="global-page-hero" style="background-image: url('../images/realistic_clinic_2.jpg');">
+            <div class="global-page-hero-overlay">
+                <h1>Provider Profile</h1>
+                <p>Meet our dedicated and compassionate psychiatric providers.</p>
+            </div>
+        </header>
+        <section class="profile-header">
+            <div class="container">
+                <div class="profile-grid">
+                    <div>
+                        <div class="profile-img-container">
+                            <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=800&q=80" alt="Dr. Peace">
+                        </div>
+                        <div class="mt-2 text-center">
+                            <a href="#book" class="btn btn-primary" style="width: 100%;">Book with Dr. Peace</a>
+                        </div>
+                    </div>
+                    <div>
+                        <h1 style="font-size: 3rem;">Dr. Peace</h1>
+                        <p class="text-muted" style="font-size: 1.2rem;">Board Certified Psychiatric Provider</p>
+                        
+                        <div class="profile-tags">
+                            <span class="profile-tag">ADHD Evaluation</span>
+                            <span class="profile-tag">Anxiety</span>
+                            <span class="profile-tag">Pain Management Support</span>
+                            <span class="profile-tag">Adults</span>
+                            <span class="profile-tag">Teens</span>
+                        </div>
+
+                        <div class="mt-2" style="font-size: 1.1rem; line-height: 1.8;">
+                            <h3>Biography</h3>
+                            <p class="mt-1">Dr. Peace is the Founder and Lead Clinician at 24-7 Shalom Psychiatry. With a passion for education and a deeply human approach to mental healthcare, Dr. Peace focuses on helping patients understand their diagnoses while providing evidence-based treatment options.</p>
+                            
+                            <h3 class="mt-2">States Licensed</h3>
+                            <p class="mt-1 text-muted">Texas, New Mexico, Nevada, Arizona, Oregon, Washington, Hawaii, Minnesota, District of Columbia, Maryland, Massachusetts.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div id="footer-placeholder"></div>
+    <script src="../js/main.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const fixPaths = (el) => {
+                if(!el) return;
+                el.innerHTML = el.innerHTML.replace(/href="css\//g, 'href="../css/')
+                                           .replace(/href="js\//g, 'href="../js/')
+                                           .replace(/src="js\//g, 'src="../js/')
+                                           .replace(/href="index\.html/g, 'href="../index.html')
+                                           .replace(/href="conditions\//g, 'href="../conditions/');
+            };
+            setTimeout(() => {
+                fixPaths(document.getElementById('header-placeholder'));
+                fixPaths(document.getElementById('footer-placeholder'));
+            }, 50);
+        });
+    </script>
+</body>
+</html>
+

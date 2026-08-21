@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | 24-7 Shalom Psychiatry</title>
+    <meta name="description" content="Get in touch with 24-7 Shalom Psychiatry. Find our phone number, patient portal, and secure referral information.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .contact-hero {
+            background-color: var(--color-background);
+            padding: var(--spacing-xl) 0 var(--spacing-lg);
+            text-align: center;
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            padding: var(--spacing-lg) 0;
+            max-width: 1500px;
+            margin: 0 auto;
+        }
+        
+        .contact-info-card {
+            background: white;
+            padding: 3rem;
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--shadow-sm);
+        }
+        
+        .contact-detail {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .contact-item h4 {
+            color: var(--color-text-muted);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 0.25rem;
+        }
+
+        .contact-item p {
+            font-size: 1.25rem;
+            font-weight: 500;
+            color: var(--color-primary);
+        }
+
+        .action-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+        }
+        
+        .action-card {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: white;
+            padding: 1.5rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-sm);
+            border: 1px solid rgba(0,0,0,0.05);
+            transition: var(--transition-fast);
+        }
+        
+        .action-card:hover {
+            transform: translateX(5px);
+            border-color: var(--color-primary-light);
+            box-shadow: var(--shadow-md);
+        }
+
+        .action-card h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .action-card p {
+            font-size: 0.9rem;
+            color: var(--color-text-muted);
+        }
+
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <main>
+        <header class="global-page-hero" style="background-image: url('images/realistic_clinic_1.jpg');">
+            <div class="global-page-hero-overlay">
+                <h1>Contact Us</h1>
+                <p>Whether you're a new patient seeking an evaluation or a referring provider, we are here to assist you securely and professionally.</p>
+            </div>
+        </header>
+
+        <section class="container">
+            <div class="emergency-disclaimer mt-2" style="max-width: 1500px; margin: 0 auto;">
+                <p><strong>IF YOU ARE EXPERIENCING A MEDICAL EMERGENCY OR CRISIS:</strong> Do not use this page. Please call 911, go to the nearest emergency room, or call the Suicide and Crisis Lifeline at 988.</p>
+            </div>
+
+            <div class="contact-grid">
+                
+                <!-- Contact Information -->
+                <div class="contact-info-card">
+                    <h2>Get in Touch</h2>
+                    <p class="text-muted mt-1">To protect your personal health information, we do not use generic contact forms on our public website.</p>
+                    
+                    <div class="contact-detail">
+                        <div class="contact-item">
+                            <h4>Primary Phone</h4>
+                            <p><a href="tel:2145182035">214-518-2035</a></p>
+                        </div>
+                        <div class="contact-item">
+                            <h4>Secondary Phone</h4>
+                            <p><a href="tel:5056586255">505-658-6255</a></p>
+                        </div>
+                        <div class="contact-item">
+                            <h4>Fax</h4>
+                            <p>469-630-8855</p>
+                        </div>
+                        <div class="contact-item">
+                            <h4>Referral Email</h4>
+                            <p><a href="mailto:refer@24-7shalompsychiatry.com">refer@24-7shalompsychiatry.com</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Action Routing -->
+                <div>
+                    <h2 class="mb-2" style="margin-bottom: 1.5rem;">How can we help?</h2>
+                    
+                    <div class="action-grid">
+                        <a href="#book" class="action-card">
+                            <div>
+                                <h3>Book an Appointment</h3>
+                                <p>Schedule a new or follow-up visit.</p>
+                            </div>
+                            <span class="text-link">&rarr;</span>
+                        </a>
+                        
+                        <a href="#portal" class="action-card">
+                            <div>
+                                <h3>Patient Portal</h3>
+                                <p>Send a secure message to your provider.</p>
+                            </div>
+                            <span class="text-link">&rarr;</span>
+                        </a>
+                        
+                        <a href="#pay" class="action-card">
+                            <div>
+                                <h3>Pay Online</h3>
+                                <p>Securely pay a current balance.</p>
+                            </div>
+                            <span class="text-link">&rarr;</span>
+                        </a>
+
+                        <a href="#refer" class="action-card">
+                            <div>
+                                <h3>Refer a Patient</h3>
+                                <p>For medical and clinical professionals.</p>
+                            </div>
+                            <span class="text-link">&rarr;</span>
+                        </a>
+                        
+                        <a href="tel:2145182035" class="action-card">
+                            <div>
+                                <h3>Call Us</h3>
+                                <p>Speak directly with our front desk.</p>
+                            </div>
+                            <span class="text-link">&rarr;</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+
